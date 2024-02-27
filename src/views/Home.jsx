@@ -5,7 +5,7 @@ import image3 from "../assets/home/image3.jpeg";
 import image4 from "../assets/home/image4.jpeg";
 import image5 from "../assets/home/image5.jpeg";
 import image6 from "../assets/home/image6.jpeg";
-import Works from "../components/Works";
+import Works from "../components/works/Works";
 import styles from './Home.module.css'
 
 
@@ -37,7 +37,7 @@ const Home = () => {
         src={photo}
         alt=""
       />
-      <div className={styles.works}>
+      <div>
         <Works images={images}/>
       </div>
     </div>
