@@ -6,7 +6,8 @@ import logo3 from "../assets/logo4.png";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [move, setMove] = useState(false)
+  const [move, setMove] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,26 +24,59 @@ const NavBar = () => {
   }, []);
 
   const handleMove = () => {
-    setMove(!move)
-  }
+    setMove(!move);
+  };
 
   return (
     <div
-      className={`fixed top-0 z-50 w-full flex justify-around items-center h-24 ${
+      className={`fixed top-0 z-50 w-full flex justify-between md:justify-around items-center h-24 ${
         isScrolled ? "bg-gradient" : "bg-gradient"
       }`}
     >
-      <div className="font-inco font-semibold flex gap-10">
-        <Link className="" onMouseMove={handleMove} to='/'>Home</Link>
-        <Link to='/portfolio'>Portfolio</Link>
-        <Link to='/gallery'>Galería</Link>
+      <div
+        className={
+          menu
+            ? "absolute top-24 right-5 z-20 font-inco font-semibold flex flex-col items-end gap-10"
+            : "hidden font-inco font-semibold md:flex gap-10"
+        }
+      >
+        <Link to="/">Home</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/gallery">Galería</Link>
       </div>
       <img className="h-16" src={logo1} alt="" />
-      <div className="font-inco font-semibold flex gap-10">
-        <Link to='/about-me'>Sobre Mi</Link>
-        <Link to='/investment'>Tarifas</Link>
-        <Link to='/contact'>Contacto</Link>
+      <div
+        className={
+          menu
+            ? "absolute top-72 right-5 z-20 font-inco font-semibold flex flex-col items-end gap-10"
+            : "hidden font-inco font-semibold md:flex gap-10"
+        }
+      >
+        <Link to="/about-me">Sobre Mi</Link>
+        <Link to="/investment">Tarifas</Link>
+        <Link to="/contact">Contacto</Link>
       </div>
+      <button className="md:hidden z-20" onClick={() => setMenu(!menu)}>
+        <div class="group flex h-16 w-20 cursor-pointer items-center justify-center rounded-3xl p-2 border-black">
+          <div class="space-y-2">
+            <span
+              class={
+                menu
+                  ? "block h-1 w-10 origin-center rounded-full bg-black transition-transform ease-in-out translate-y-1.5 rotate-45"
+                  : "block h-1 w-10 origin-center rounded-full bg-black transition-transform ease-in-out"
+              }
+            ></span>
+            <span
+              class={
+                menu
+                  ? "block h-1 w-10 origin-center rounded-full bg-green transition-transform ease-in-out -translate-y-1.5 -rotate-45"
+                  : "block h-1 w-7 origin-center rounded-full bg-green transition-transform ease-in-out"
+              }
+            ></span>
+          </div>
+        </div>
+      </button>
+      <span className={menu ? "absolute w-40 h-screen bg-rosa top-0 right-0" : 'hidden'}></span>
     </div>
   );
 };
