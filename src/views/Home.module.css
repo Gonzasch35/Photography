@@ -1,0 +1,21 @@
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.works {
+    view-timeline-name: --work;
+    view-timeline-axis: block;
+
+    animation-timeline: --work;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}

@@ -1,0 +1,27 @@
+.bg-gradient-rosa {
+  background-color: #FFE4E1;
+}
+
+.transition-bg {
+  transition: background-color 0.3s ease;
+}
+
+.bg-gradient {
+  background: linear-gradient(180deg, rgba(255,228,225,1) 0%, rgba(255,228,225,0) 100%);
+}
+
+.bg-rosa {
+  background-color: #FFCCD2; /* O el color rosa que prefieras */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
