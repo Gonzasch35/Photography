@@ -33,7 +33,7 @@ const NavBar = () => {
       }`}
     >
       <div className="font-inco font-semibold flex gap-10">
-        <Link onMouseMove={handleMove} to='/'>Home</Link>
+        <Link className="" onMouseMove={handleMove} to='/'>Home</Link>
         <Link to='/portfolio'>Portfolio</Link>
         <Link to='/gallery'>Galería</Link>
       </div>
@@ -42,7 +42,6 @@ const NavBar = () => {
         <Link to='/about-me'>Sobre Mi</Link>
         <Link to='/investment'>Tarifas</Link>
         <Link to='/contact'>Contacto</Link>
-        
       </div>
     </div>
   );
