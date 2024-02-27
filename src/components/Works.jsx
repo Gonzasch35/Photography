@@ -8,7 +8,7 @@ const Works = ({ images }) => {
         What type of photoshoot are you looking for?
       </h1>
 
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-2">
         {images?.map((img, index) => {
           return (
             <Atropos

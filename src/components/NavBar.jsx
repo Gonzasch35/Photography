@@ -42,6 +42,7 @@ const NavBar = () => {
         <Link to='/about-me'>Sobre Mi</Link>
         <Link to='/investment'>Tarifas</Link>
         <Link to='/contact'>Contacto</Link>
+        
       </div>
     </div>
   );
