@@ -23,7 +23,7 @@ const Works = ({ images }) => {
                 />
                 <h1
                   className="font-dancing text-4xl text-white absolute top-1/3 left-1/3 transform -translate-x-1/3"
-                  data-atropos-offset="3"
+                  data-atropos-offset="20"
                 >
                   Family
                 </h1>

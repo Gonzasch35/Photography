@@ -8,6 +8,7 @@ export default {
         rosa2: "#FBCEB1",
         rosa3: "#F7E7CE",
         beige: "#F5F5DC",
+        green: "#fcb7af",
 
       },
       fontFamily: {

@@ -9,6 +9,9 @@
 .bg-gradient {
   background: linear-gradient(180deg, rgba(255,228,225,1) 0%, rgba(255,228,225,0) 100%);
 }
+.bg-gradiente {
+  background: linear-gradient(180deg, rgba(255,228,225,1) 0%, rgb(107, 107, 107) 100%);
+}
 
 .bg-rosa {
   background-color: #FFCCD2; /* O el color rosa que prefieras */
