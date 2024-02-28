@@ -26,42 +26,44 @@ const Home = () => {
   useEffect(() => {
     setPhoto(images[index]);
   }, [index]);
-  
+
   const backToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth" // Opcional, para realizar un desplazamiento suave
+      behavior: "smooth", // Opcional, para realizar un desplazamiento suave
     });
   };
 
   return (
-    <div className="">
-      <img
-        className="h-screen w-full object-cover duration-2000"
-        src={photo}
-        alt=""
-      />
+    <div>
+      <div className="relative">
+        <img
+          className="h-screen w-full object-cover duration-2000"
+          src={photo}
+          alt=""
+        />
+        <div className="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-rosa to-transparent" />
+      </div>
       <div>
         <Works images={images} />
       </div>
-      <div class="fixed bottom-0 right-0 p-4">
+      <div className="fixed bottom-0 right-0 p-4">
         <button
-          class="bg-green text-white rounded-full w-10 h-10 flex items-center justify-center"
+          className="bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center"
           onClick={backToTop}
         >
           <svg
-            class="w-6 h-6"
-            fill="#ffffff"
-            stroke="black"
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M5 10l7-7m0 0l7 7m-7-7v18"
-              fill="#ffffff"
             ></path>
           </svg>
         </button>

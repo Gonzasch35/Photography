@@ -40,9 +40,9 @@ const NavBar = () => {
             : "hidden font-inco font-semibold md:flex gap-10"
         }
       >
-        <Link to="/">Home</Link>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/gallery">Galería</Link>
+        <Link className="p-2 rounded-sm hover:bg-rosa" to="/">Home</Link>
+        <Link className="p-2 rounded-sm hover:bg-rosa" to="/portfolio">Portfolio</Link>
+        <Link className="p-2 rounded-sm hover:bg-rosa" to="/gallery">Galería</Link>
       </div>
       <img className="h-16" src={logo1} alt="" />
       <div
@@ -52,9 +52,9 @@ const NavBar = () => {
             : "hidden font-inco font-semibold md:flex gap-10"
         }
       >
-        <Link to="/about-me">Sobre Mi</Link>
-        <Link to="/investment">Tarifas</Link>
-        <Link to="/contact">Contacto</Link>
+        <Link className="p-2 rounded-sm hover:bg-rosa" to="/about-me">Sobre Mi</Link>
+        <Link className="p-2 rounded-sm hover:bg-rosa" to="/investment">Tarifas</Link>
+        <Link className="p-2 rounded-sm hover:bg-rosa" to="/contact">Contacto</Link>
       </div>
       <button className="md:hidden z-20" onClick={() => setMenu(!menu)}>
         <div class="group flex h-16 w-20 cursor-pointer items-center justify-center rounded-3xl p-2 border-black">
