@@ -36,7 +36,7 @@ const NavBar = () => {
       <div
         className={
           menu
-            ? "absolute top-24 right-5 z-20 font-inco font-semibold flex flex-col items-end gap-10"
+            ? "absolute top-20 right-5 z-20 font-inco font-semibold flex flex-col items-end gap-10"
             : "hidden font-inco font-semibold md:flex gap-10"
         }
       >
@@ -48,7 +48,7 @@ const NavBar = () => {
       <div
         className={
           menu
-            ? "absolute top-72 right-5 z-20 font-inco font-semibold flex flex-col items-end gap-10"
+            ? "absolute top-80 right-5 z-20 font-inco font-semibold flex flex-col items-end gap-10"
             : "hidden font-inco font-semibold md:flex gap-10"
         }
       >
@@ -62,15 +62,15 @@ const NavBar = () => {
             <span
               class={
                 menu
-                  ? "block h-1 w-10 origin-center rounded-full bg-black transition-transform ease-in-out translate-y-1.5 rotate-45"
-                  : "block h-1 w-10 origin-center rounded-full bg-black transition-transform ease-in-out"
+                  ? "block h-1 w-8 origin-center rounded-full bg-black transition-transform ease-in-out translate-y-1.5 rotate-45"
+                  : "block h-1 w-7 origin-center rounded-full bg-black transition-transform ease-in-out"
               }
             ></span>
             <span
               class={
                 menu
-                  ? "block h-1 w-10 origin-center rounded-full bg-green transition-transform ease-in-out -translate-y-1.5 -rotate-45"
-                  : "block h-1 w-7 origin-center rounded-full bg-green transition-transform ease-in-out"
+                  ? "block h-1 w-8 origin-center rounded-full bg-green transition-transform ease-in-out -translate-y-1.5 -rotate-45"
+                  : "block h-1 w-5 origin-center rounded-full bg-green transition-transform ease-in-out"
               }
             ></span>
           </div>

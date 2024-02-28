@@ -5,7 +5,7 @@ import styles from "./Works.module.css";
 const Works = ({ images }) => {
   return (
     <div className="w-full md:w-3/4 p-16 mx-auto flex items-center flex-col flex-wrap">
-      <h1 className={`${styles.works} mb-5 font-dancing text-3xl`}>
+      <h1 className={`${styles.works} mb-5 font-dancing text-3xl text-center`}>
         What type of photoshoot are you looking for?
       </h1>
 
